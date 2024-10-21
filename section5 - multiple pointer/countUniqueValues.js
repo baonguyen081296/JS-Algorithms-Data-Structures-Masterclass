@@ -14,9 +14,10 @@ const countUniqueValues = (array) => {
       result++;
     }
   }
-	return result
+  return result;
 };
 const arr = [1, 1, 1, 1, 1, 2];
 const arr2 = [-1, -2, 3, 4, 4, 4, 7, 7, 12, 12, 13];
-const check = countUniqueValues(arr2)
-console.log('check: ', check)
+const empty = [1];
+const check = countUniqueValues(empty);
+console.log("check: ", check);
