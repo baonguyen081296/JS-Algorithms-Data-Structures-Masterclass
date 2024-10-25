@@ -1,9 +1,14 @@
 const insertionSort = (array) => {
-  console.log('array: ', array);
-  console.log('sorted: ', array);
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
+  for (let i = 1; i < array.length; i++) {
+    const curI = array[i];
+    for (var j = i - 1; j >= 0 && array[j] > curI; j--) {
+      array[j + 1] = array[j];
+    }
+    array[j + 1] = curI;
   }
+  return array;
 };
 
-insertionSort([37, 45, 29, 8]);
+const check = insertionSort([37, 45, 29, 8]);
+// []
+console.log("check: ", check);
