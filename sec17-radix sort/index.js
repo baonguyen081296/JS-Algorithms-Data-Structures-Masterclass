@@ -25,11 +25,11 @@ const radixSort = (array) => {
       digitBucket[digit].push(array[i]);
     }
     array = [].concat(...digitBucket);
-    console.log('digitBucket: ', digitBucket);
+    console.log("digitBucket: ", digitBucket);
   }
   return array;
 };
 const inputArray = [23, 345, 5467, 12, 2345, 9852];
 const result = radixSort(inputArray);
-console.log('result: ', result);
-console.log('inputArray: ', inputArray);
+console.log("result: ", result);
+console.log("inputArray: ", inputArray);
